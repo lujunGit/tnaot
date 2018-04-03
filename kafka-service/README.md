@@ -15,6 +15,8 @@
         windows .\bin\windows\kafka-server-start.bat .\config\server.properties
         liunx?
     3：启动项目
+    4：liunx中搭建kafka集群环境，可以参考
+    https://www.cnblogs.com/luotianshuai/p/5206662.html
 
 二：开发前准备
 
