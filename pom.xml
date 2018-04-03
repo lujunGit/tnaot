@@ -21,6 +21,7 @@
         <module>sleuth-service</module>
         <module>getway-service</module>
         <module>redis-service</module>
+        <module>kafka-service</module>
     </modules>
 
     <properties>

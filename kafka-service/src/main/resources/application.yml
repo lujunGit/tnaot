@@ -1,0 +1,40 @@
+server:
+  port: 8089
+
+spring:
+  profiles:
+    active: test
+  application:
+    name: kafkaService
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+
+  kafka:
+    consumer:
+      zookeeper:
+        connect: 127.0.0.1:2181
+      servers: 127.0.0.1:9092
+      enable.auto.commit: true
+      session.timeout: 6000
+      auto.commit.interval: 100
+      auto.offset.reset: latest
+      topic: test
+      group.id: test
+      concurrency: 10
+
+    producer:
+      servers: 127.0.0.1:9092
+      retries:  0
+      batch.size: 4096
+      linger: 1
+      buffer.memory: 40960
+
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  level:
+    com.mongcent.tnaot: debug
+    org.springfromework: info
+  file: kafka-service/log/kafka-service.log
