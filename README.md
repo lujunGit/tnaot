@@ -10,6 +10,7 @@
 7：user-service:用户服务
 8：discovery-service:发现服务
 9：redis-service:缓存服务
+10：kafka-service:kafka消息服务
 
 每个服务对应该的接口放在各自服务模块中
 
