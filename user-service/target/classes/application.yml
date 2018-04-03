@@ -1,0 +1,43 @@
+server:
+  port: 8086
+
+spring:
+  profiles:
+    active: test
+  application:
+    name: userService
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/sctest?characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: 123456
+    initialize: true
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show_sql: true
+    format_sql: true
+    database: MYSQL
+    generate-ddl: true
+    open-in-view: true
+    hibernate:
+      hbm2ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  zipkin:
+    base-url: http://localhost:8087
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  level:
+    com.mongcent.tnaot: debug
+    org.springfromework: info
+    org.hibernate: error
+  file: user-service/log/user-service.log
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

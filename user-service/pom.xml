@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>user-service</artifactId>
+    <packaging>jar</packaging>
+    <version>master-RELEASE</version>
+
+    <name>user-service Maven Webapp</name>
+
+    <parent>
+        <artifactId>tnaot</artifactId>
+        <groupId>com.mx.app</groupId>
+        <version>master-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+
+    <dependencies>
+        <!--公共包依赖-->
+        <dependency>
+            <artifactId>common-service</artifactId>
+            <groupId>com.mx.app</groupId>
+            <version>master-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>

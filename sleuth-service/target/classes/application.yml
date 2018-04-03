@@ -1,0 +1,35 @@
+server:
+  port: 8087
+
+spring:
+  profiles:
+    active: test
+  application:
+    name: sleuthService
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  datasource:
+      url: jdbc:mysql://127.0.0.1:3306/sctest?characterEncoding=UTF-8&useSSL=true
+      username: root
+      password: 123456
+      initialize: true
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+      show_sql: true
+      format_sql: true
+      database: MYSQL
+      generate-ddl: true
+      hibernate:
+        hbm2ddl-auto: update
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  level:
+    com.mongcent.tnaot: debug
+    org.springfromework: info
+    org.hibernate: error
+  file: sleuth-service/log/sleuth-service.log

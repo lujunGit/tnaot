@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="channel-service" />
+        <module name="comment-service" />
+        <module name="common-service" />
+        <module name="config-service" />
+        <module name="discovery-service" />
+        <module name="getway-service" />
+        <module name="information-service" />
+        <module name="redis-service" />
+        <module name="search-service" />
+        <module name="sleuth-service" />
+        <module name="tnaot-interface" />
+        <module name="user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="channel-service" target="1.8" />
+      <module name="comment-service" target="1.8" />
+      <module name="common-service" target="1.8" />
+      <module name="config-service" target="1.8" />
+      <module name="demo" target="1.5" />
+      <module name="discovery-service" target="1.8" />
+      <module name="getway-service" target="1.8" />
+      <module name="information-service" target="1.8" />
+      <module name="redis-service" target="1.8" />
+      <module name="search-service" target="1.8" />
+      <module name="sleuth-service" target="1.8" />
+      <module name="tnaot" target="1.8" />
+      <module name="tnaot-inter" target="1.5" />
+      <module name="tnaot-interface" target="1.5" />
+      <module name="tnaot-ui" target="1.8" />
+      <module name="user-service" target="1.8" />
+      <module name="zuul-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

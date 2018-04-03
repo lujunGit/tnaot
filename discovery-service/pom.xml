@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>tnaot</artifactId>
+        <groupId>com.mx.app</groupId>
+        <version>master-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mx.app</groupId>
+    <artifactId>discovery-service</artifactId>
+    <packaging>jar</packaging>
+    <version>master-SNAPSHOT</version>
+    <name>discovery-service Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!--公共包依赖
+        <dependency>
+            <artifactId>common-service</artifactId>
+            <groupId>com.mx.app</groupId>
+            <version>master-SNAPSHOT</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <version>1.4.4.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tnaot-ui:war">
+    <output-path>$PROJECT_DIR$/tnaot-ui/target</output-path>
+    <root id="archive" name="tnaot-ui.war">
+      <element id="artifact" artifact-name="tnaot-ui:war exploded" />
+    </root>
+  </artifact>
+</component>

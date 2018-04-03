@@ -1,0 +1,28 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: test
+  application:
+    name: redisService
+  #spring-boot整合单机版redis redis作为缓存  
+  redis:
+    hostName: 127.0.0.1
+    port: 6379
+    password: ljtest
+    database: 2
+    timeout: 0
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  level:
+    com.mongcent.tnaot: debug
+    org.springfromework: info
+  file: redis-service/log/redis-service.log
