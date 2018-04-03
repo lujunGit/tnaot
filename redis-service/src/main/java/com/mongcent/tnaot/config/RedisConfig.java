@@ -12,6 +12,9 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 
 import redis.clients.jedis.JedisPoolConfig;
 
+/**
+ * 此类主要是做连接redis服务器配置
+ */
 @Configuration
 @EnableAutoConfiguration
 public class RedisConfig {
@@ -53,8 +56,8 @@ public class RedisConfig {
         JedisConnectionFactory factory = getConnectionFactory();
         logger.info(this.host + "," + factory.getHostName() + "," + factory.getDatabase());
         logger.info(this.password + "," + factory.getPassword());
-        factory.setHostName(this.host);
-        factory.setPassword(this.password);
+        //factory.setHostName(this.host);
+        //factory.setPassword(this.password);
         RedisTemplate<?, ?> template = new StringRedisTemplate(getConnectionFactory());
         template.setEnableTransactionSupport(true);
         return template;

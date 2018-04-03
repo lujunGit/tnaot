@@ -1,7 +1,5 @@
 package com.mongcent.tnaot.message;
 
-import com.mongcent.tnaot.api.v1.RedisController;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
@@ -10,39 +8,37 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.listener.PatternTopic;
 import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.CountDownLatch;
-
-import javax.annotation.Resource;
 
 /**
  * 消息监听
  */
-@Resource
+@Component
 public class MessageListener {
 
-    private static final Logger logger = LoggerFactory.getLogger(RedisController.class);
+    private static final Logger logger = LoggerFactory.getLogger(MessageListener.class);
 
     @Bean
     RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory,
-            MessageListenerAdapter listenerAdapter) {
+                                            MessageListenerAdapter listenerAdapter) {
 
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
         //这里可以接受添加一个topic集合对象，可以尝试
         container.addMessageListener(listenerAdapter, new PatternTopic("chat"));
-
         return container;
     }
 
     @Bean
-    MessageListenerAdapter listenerAdapter(Receiver receiver) {
+    MessageListenerAdapter listenerAdapter(MessageReceiver receiver) {
         return new MessageListenerAdapter(receiver, "receiveMessage");
     }
 
     @Bean
-    Receiver receiver(CountDownLatch latch) {
-        return new Receiver(latch);
+    MessageReceiver receiver(CountDownLatch latch) {
+        return new MessageReceiver(latch);
     }
 
     @Bean

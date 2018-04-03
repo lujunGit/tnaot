@@ -8,7 +8,8 @@
 5：search-service:搜索服务
 6：tnaot-ui:前端ui[已删除不需要]
 7：user-service:用户服务
-7：user-service:用户服务
+8：discovery-service:发现服务
+9：redis-service:缓存服务
 
 每个服务对应该的接口放在各自服务模块中
 

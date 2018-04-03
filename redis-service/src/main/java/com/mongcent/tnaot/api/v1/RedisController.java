@@ -1,18 +1,13 @@
 package com.mongcent.tnaot.api.v1;
 
-import com.mongcent.tnaot.message.MessageSend;
 import com.mongcent.tnaot.model.RedisModel;
 import com.mongcent.tnaot.service.RedisService;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Random;
 import java.util.UUID;
@@ -26,9 +21,13 @@ public class RedisController {
 
     private RedisService redisService;
 
+    //一般发送消息的业务逻辑放在service层，这里做测试方便
+    private StringRedisTemplate redisTemplate;
+
     @Autowired
-    public RedisController(RedisService redisService) {
+    public RedisController(RedisService redisService, StringRedisTemplate redisTemplate) {
         this.redisService = redisService;
+        this.redisTemplate = redisTemplate;
     }
 
     @GetMapping("/getRedisModelById/{id}")
@@ -46,9 +45,11 @@ public class RedisController {
 
     @GetMapping("/sandSyncMsg/{msg}")
     public Object sandSyncMsg(@PathVariable String msg) {
-        MessageSend messageSend = new MessageSend();
         final String topicName = "chat";
-        messageSend.sendMessage(topicName, msg);
+        //redisTemplate.convertAndSend(topicName, msg);
+        redisTemplate.convertAndSend("email", "email send msg");
+        redisTemplate.convertAndSend("order", "order send msg");
+        redisTemplate.convertAndSend("notice", "notice send msg");
         return "ok";
     }
 }
