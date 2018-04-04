@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/sleuth-service/sleuth-service.iml" filepath="$PROJECT_DIR$/sleuth-service/sleuth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tnaot.iml" filepath="$PROJECT_DIR$/tnaot.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webui-service/webui-service.iml" filepath="$PROJECT_DIR$/webui-service/webui-service.iml" />
     </modules>
   </component>
 </project>

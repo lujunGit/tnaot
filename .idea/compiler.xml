@@ -19,6 +19,7 @@
         <module name="sleuth-service" />
         <module name="tnaot-interface" />
         <module name="user-service" />
+        <module name="webui-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +40,8 @@
       <module name="tnaot-interface" target="1.5" />
       <module name="tnaot-ui" target="1.8" />
       <module name="user-service" target="1.8" />
+      <module name="webui-service" target="1.8" />
+      <module name="webUI-service" target="1.8" />
       <module name="zuul-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>

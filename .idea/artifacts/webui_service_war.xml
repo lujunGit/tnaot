@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webui-service:war">
+    <output-path>$PROJECT_DIR$/webui-service/target</output-path>
+    <root id="archive" name="webui-service.war">
+      <element id="artifact" artifact-name="webui-service:war exploded" />
+    </root>
+  </artifact>
+</component>
