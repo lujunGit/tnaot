@@ -35,6 +35,19 @@ public class RedisServiceImpl implements RedisService {
     }
 
     @Override
+    public boolean set(String key, String value, Long expireSecond) {
+        boolean result = redisTemplate.execute(new RedisCallback<Boolean>() {
+            @Override
+            public Boolean doInRedis(RedisConnection connection) throws DataAccessException {
+                RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
+                connection.setEx(serializer.serialize(key), expireSecond, serializer.serialize(value));
+                return true;
+            }
+        });
+        return result;
+    }
+
+    @Override
     public String get(final String key) {
         String result = redisTemplate.execute(new RedisCallback<String>() {
             @Override
@@ -107,5 +120,19 @@ public class RedisServiceImpl implements RedisService {
             }
         });
         return result;
+    }
+
+    @Override
+    public boolean existKey(final String key){
+        return redisTemplate.hasKey(key);
+    }
+
+    @Override
+    public Long getExpireTime(final String key){
+        return redisTemplate.getExpire(key, TimeUnit.SECONDS);
+    }
+
+    public RedisTemplate getRedisTemplate(){
+        return redisTemplate;
     }
 }

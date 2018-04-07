@@ -11,7 +11,7 @@ spring:
     hostName: 127.0.0.1
     port: 6379
     password: ljtest
-    database: 2
+    database: 0
     timeout: 0
     pool:
       max-active: 8

@@ -1,10 +1,14 @@
 package com.mongcent.tnaot.service;
 
+import org.springframework.data.redis.core.RedisTemplate;
+
 import java.util.List;
 
 public interface RedisService {
 
     boolean set(final String key, final String value);
+
+    boolean set(final String key, final String value, final Long expire);
 
     String get(final String key);
 
@@ -19,4 +23,10 @@ public interface RedisService {
     long rpush(final String key, Object obj);
 
     String lpop(final String key);
+
+    boolean existKey(final String key);
+
+    Long getExpireTime(final String key);
+
+    RedisTemplate getRedisTemplate();
 }

@@ -52,7 +52,7 @@ public class RedisConfig {
     }
 
     @Bean
-    public RedisTemplate<?, ?> getRedisTemplate() {
+    public RedisTemplate<?, ?> getStringRedisTemplate() {
         JedisConnectionFactory factory = getConnectionFactory();
         logger.info(this.host + "," + factory.getHostName() + "," + factory.getDatabase());
         logger.info(this.password + "," + factory.getPassword());
