@@ -16,6 +16,7 @@ spring:
     password: 123456
     initialize: true
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
   jpa:
     show_sql: true
     format_sql: true

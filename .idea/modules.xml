@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/kafka-service/kafka-service.iml" filepath="$PROJECT_DIR$/kafka-service/kafka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis-service/redis-service.iml" filepath="$PROJECT_DIR$/redis-service/redis-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/search-service/search-service.iml" filepath="$PROJECT_DIR$/search-service/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiroAuth-service/shiroAuth-service.iml" filepath="$PROJECT_DIR$/shiroAuth-service/shiroAuth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/sleuth-service/sleuth-service.iml" filepath="$PROJECT_DIR$/sleuth-service/sleuth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tnaot.iml" filepath="$PROJECT_DIR$/tnaot.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />

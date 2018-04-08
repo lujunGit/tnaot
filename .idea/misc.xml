@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/getway-service" />
     <file type="web" url="file://$PROJECT_DIR$/kafka-service" />
     <file type="web" url="file://$PROJECT_DIR$/redis-service" />
+    <file type="web" url="file://$PROJECT_DIR$/shiroAuth-service" />
     <file type="web" url="file://$PROJECT_DIR$/sleuth-service" />
     <file type="web" url="file://$PROJECT_DIR$/tnaot-ui" />
     <file type="web" url="file://$PROJECT_DIR$/webui-service" />

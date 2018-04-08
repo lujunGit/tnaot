@@ -2,7 +2,6 @@ package com.mongcent.tnaot.service;
 
 
 import com.mongcent.tnaot.util.JSONUtil;
-
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
@@ -10,10 +9,9 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import javax.annotation.Resource;
 
 @Service
 public class RedisServiceImpl implements RedisService {

@@ -1,0 +1,44 @@
+server:
+  port: 8089
+
+spring:
+  profiles:
+    active: test
+  application:
+    name: shiroService
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/shiroAuth?characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: 123456
+    initialize: true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    show_sql: true
+    format_sql: true
+    database: MYSQL
+    generate-ddl: true
+    open-in-view: true
+    hibernate:
+      hbm2ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  level:
+    com.mongcent.tnaot: debug
+    org.springfromework: info
+    org.hibernate: error
+  file: shiro-service/log/shiro-service.log

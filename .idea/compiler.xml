@@ -16,6 +16,7 @@
         <module name="kafka-service" />
         <module name="redis-service" />
         <module name="search-service" />
+        <module name="shiroAuth-service" />
         <module name="sleuth-service" />
         <module name="tnaot-interface" />
         <module name="user-service" />
@@ -34,6 +35,7 @@
       <module name="kafka-service" target="1.8" />
       <module name="redis-service" target="1.8" />
       <module name="search-service" target="1.8" />
+      <module name="shiroAuth-service" target="1.7" />
       <module name="sleuth-service" target="1.8" />
       <module name="tnaot" target="1.8" />
       <module name="tnaot-inter" target="1.5" />
