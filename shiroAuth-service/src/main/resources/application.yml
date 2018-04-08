@@ -6,10 +6,7 @@ spring:
     active: test
   application:
     name: shiroService
-  mvc:
-    throw-exception-if-no-handler-found: true
-  resources:
-    add-mappings: false
+
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/shiroAuth?characterEncoding=UTF-8&useSSL=true
     username: root
@@ -27,6 +24,9 @@ spring:
       hbm2ddl-auto: update
       dialect: org.hibernate.dialect.MySQL5Dialect
       naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  zipkin:
+      base-url: http://localhost:8087
 
   thymeleaf:
     mode: HTML5
