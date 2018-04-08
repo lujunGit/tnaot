@@ -259,7 +259,7 @@
         <entry file="file://$PROJECT_DIR$/shiroAuth-service/src/main/java/com/mongcent/tnaot/ShiroApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -280,7 +280,7 @@
         <entry file="file://$PROJECT_DIR$/shiroAuth-service/src/main/java/com/mongcent/tnaot/api/v1/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+              <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -288,11 +288,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shiroAuth-service/src/main/resources/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shiroAuth-service/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="6" selection-start-column="6" selection-end-column="6" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -301,7 +313,7 @@
         <entry file="file://$PROJECT_DIR$/shiroAuth-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="229">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -372,7 +384,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/redis-service/src/main/java/com/mongcent/tnaot/message/order/NoticeListener.java" />
         <option value="$PROJECT_DIR$/redis-service/src/main/java/com/mongcent/tnaot/message/order/OrderListener.java" />
         <option value="$PROJECT_DIR$/redis-service/src/main/java/com/mongcent/tnaot/message/email/EmailReceiver.java" />
         <option value="$PROJECT_DIR$/redis-service/src/main/java/com/mongcent/tnaot/message/notice/NoticeReceiver.java" />
@@ -423,6 +434,7 @@
         <option value="$PROJECT_DIR$/shiroAuth-service/src/main/resources/templates/hello.html" />
         <option value="$PROJECT_DIR$/shiroAuth-service/src/main/java/com/mongcent/tnaot/api/v1/UserController.java" />
         <option value="$PROJECT_DIR$/shiroAuth-service/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/shiroAuth-service/README.md" />
       </list>
     </option>
   </component>
@@ -450,12 +462,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="shiroAuth-service Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="tnaot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="shiroAuth-service Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="tnaot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -513,63 +525,6 @@
               <item name="tnaot" type="462c0819:PsiDirectoryNode" />
               <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tnaot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tnaot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tnaot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tnaot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tnaot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tnaot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tnaot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tnaot" type="462c0819:PsiDirectoryNode" />
-              <item name="shiroAuth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -591,7 +546,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -891,7 +846,7 @@
       <workItem from="1523082308662" duration="3442000" />
       <workItem from="1523110381730" duration="8888000" />
       <workItem from="1523150532719" duration="6271000" />
-      <workItem from="1523177788996" duration="6557000" />
+      <workItem from="1523177788996" duration="6772000" />
     </task>
     <servers />
   </component>
@@ -928,7 +883,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208965000" />
+    <option name="totallyTimeSpent" value="209180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -952,10 +907,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23336853" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18690602" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22604166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22604166" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -980,7 +935,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/apache-maven-3.3.9/shuren_repository/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/RedisStringCommands.class" />
     <entry file="jar://E:/apache-maven-3.3.9/shuren_repository/org/springframework/spring-beans/4.3.10.RELEASE/spring-beans-4.3.10.RELEASE.jar!/org/springframework/beans/factory/BeanClassLoaderAware.class" />
     <entry file="jar://E:/apache-maven-3.3.9/shuren_repository/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/core/RedisAccessor.class" />
     <entry file="jar://E:/apache-maven-3.3.9/shuren_repository/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/core/RedisOperations.class" />
@@ -1307,14 +1261,14 @@
     <entry file="file://$PROJECT_DIR$/shiroAuth-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shiroAuth-service/src/main/java/com/mongcent/tnaot/ShiroApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1324,7 +1278,7 @@
     <entry file="file://$PROJECT_DIR$/shiroAuth-service/src/main/java/com/mongcent/tnaot/api/v1/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
-          <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1341,7 +1295,17 @@
     <entry file="file://$PROJECT_DIR$/shiroAuth-service/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiroAuth-service/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="6" selection-start-column="6" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1399,7 +1363,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>information-service</last-edited>
+          <last-edited>shiroAuth-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
